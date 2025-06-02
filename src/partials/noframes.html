@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<!-- Con la siguiente etiqueta empieza la cabecera. -->
+<head>
+	<!-- utilizaremos meta tags para hacer la página responsive y que no caché el contenido. -->
+	<meta charset="UTF-8">
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="../media/logo.svg" />
+	<link href="../css/styles.css"
+      rel="stylesheet" type="text/css">
+	<title> Noframes </title>
+	<style>		
+
+
+	button.btn-primary{
+		background-color: blueviolet;
+		border-radius: 15px;  
+		color: black;
+		cursor: pointer;
+		padding: 10px 10px;
+		margin: 10px 10px 10px 10px;
+		width: 180px; 
+		height: 40px;
+		font-size: 18px;
+	}
+
+	button.btn-primary:hover{
+		   background-image: linear-gradient(to right, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+		   animation:slidebg 5s linear infinite;
+	}
+	@keyframes slidebg { to {background-position:20vw;}}
+	</style>
+</head>
+<!-- Aqui acaba la cabecera y empieza el cuerpo del documento. -->
+<body>
+	<header class="row green cabecera"><br><center><h1> Mi Formulario </h1> Lenguaje de Marcas, ASIR </center></header>
+		<aside>
+			<div class="content">
+			<center> <h1> Men&uacute; </h1> </center>
+				<hr />
+				<ul>
+					<li><a target= "central" href="../html/saludos.html"> Saludos </a></li><br>
+					<li><a target= "central" href="../html/caracteres.html"> Caracteres Especiales </a></li><br>
+					<li><a target= "central" href="../html/meta.html"> Meta </a></li><br>
+					<li><a target= "central" href="noframes.html"> Noframes </a></li><br>
+					<li><a target= "_parent" href="../html/calculadora.html"> Calculadora </a></li><br>
+					<li><a target= "_parent" href="../html/tienda.html"> Tienda </a></li><br>
+				</ul>
+			</div>
+		</aside>
+		<!-- Fin del menu e inicio del contenido o formulario -->
+		<main>
+			<div class="content">
+				<h1><u>Formulario</u></h1>
+				<form action="printpost.asp" method="post">
+				<div class="row">
+					<div class="col50">
+		<!-- Ahora haremos un formulario, utilizando la etiqueta form para englobar nuestro formulario, el elemento fieldset para agrupar elementos dentro del formulario, el elemento legend representa una etiqueta para el contenido de 'fieldset', el label lo usaremos para escribir el nombre del campo a rellenar y el input para crear un campo que permitirá al usuario interactuar. -->
+				<fieldset>
+					<legend>Datos personales</legend>
+			  		<label for="name">Nombre:</label>
+			  		<input type="text" id="name" name="Nombre" placeholder="Nombre" maxlength="25" required><br>
+			  		<label for="Apellido">Apellidos:</label>
+			  		<input type="text" id="Apellido" name="Apellidor" placeholder="Apellidos" maxlength="120" required><br>
+			  		<label for="email">Correo:</label>
+			 		<input type="email" id="email" name="Email" placeholder="Correo@gmail.com" required><br>
+			 		<label for="tel">Móvil:</label>
+			 		<input type="tel" id="tel" name="Teléfono" placeholder="Teléfono" pattern="[6-7]{1}[0-9]{8}" max="9" required ><br>
+			  		<label for="Date">Fecha de nacimiento:</label>
+			  		<input type="date" name="Fecha de nacimiento"><br>
+			 		<label for="quantity">Número de hermanos/as:</label>
+			 		<input type="number" id="quantity" name="Numero de hermanos" placeholder="1-50" min="0" max="50" step="1">
+			 	</fieldset>
+			 		</div>
+			 	<div class="col50">
+			 	<fieldset>
+					<legend>Hobbies</legend>
+					<input type="checkbox" name="Hobbies" value="Deporte">Deporte<br>
+					<input type="checkbox" name="Hobbies" value="Leer">Leer<br>
+					<input type="checkbox" name="Hobbies" value="Cocinar">Cocinar<br>				
+					<input type="checkbox" name="Hobbies" value="Cine">Cine (Series o peliculas)<br>	
+					<input type="checkbox" name="Hobbies" value="Arte">Arte (Música, pintura, etc.)<br>
+					<input type="checkbox" name="Hobbies" value="Investigación">Investigación<br>			
+					<input type="checkbox" name="Hobbies" value="Otros">Otros: <input type="text" name="Hobbies" placeholder="Especificar" maxlength="50">
+				</fieldset>
+				</div>
+				</div>
+				<div class="row">
+					<div class="col50">
+				<fieldset>
+					<legend>¿Te gusta el cine?</legend>
+					<input type="radio" id="Si" name="¿Te gusta el cine?" value="Si">
+		 			<label for="Si">Si</label>
+					<input type="radio" id="No" name="¿Te gusta el cine?" value="No">
+		 			<label for="No">No</label><br>
+		 			<label>Películas favoritas: (Pulsar "ctrl" para seleccionar más de una)</label><br>
+		 			<select name="Películas favoritas" multiple="multiple">
+		 			<optgroup label="Comedia">
+		 				<option>Dando la nota</option>
+		 				<option>La llamada</option>
+		 			</optgroup>
+		 			<optgroup label="Drama">
+		 				<option>El niño con el pijama de rayas</option>
+		 				<option>La lista de Schindler</option>
+		 			</optgroup>
+		 			<optgroup label="Terror">	
+		 				<option>Escape room</option>
+		 				<option>Malasaña 32</option>
+		 			</optgroup> 					
+		 			<optgroup label="Acción">
+		 				<option>Bullet train</option>
+		 				<option>Fast and Furious</option>
+		 			</optgroup>
+		 			<optgroup label="Ciencia Ficción">
+		 				<option>Avatar</option>
+		 				<option>Star Wars</option>
+		 			</optgroup>
+		 			<optgroup label="Romance">
+		 				<option>La la Land</option>
+		 				<option>Con amor, Simon</option>
+		 			</optgroup>
+					<optgroup label="Fantasía">
+						<option>Pinocho</option>
+		 				<option>Coco</option>
+					</optgroup>
+					</select>
+					</div>
+				</fieldset>
+					<div class="col50">		
+				<fieldset>
+					<legend>¿Te gusta el fútbol?</legend>
+					<input type="radio" id="Si" name="¿Te gusta el futbol?" value="Si">
+					<label for="Si">Si</label><br>
+					<input type="radio" id="Más o menos" name="¿Te gusta el futbol?" value="Más o menos">
+					<label for="Más o menos">Más o menos</label><br>
+					<input type="radio" id="No" name="¿Te gusta el futbol?" value="No">
+					<label for="No">No</label><br><br>
+					<label for="Equipos" name="Equipos de futbol">Equipo Preferido:</label><br><br>
+					<!-- Para crear una lista de opciones seleccionables, usaremos el datalist, para incluir un filtro entre las opciones que haga su búsqueda más facil y el option para añadir valores.-->
+					<input list="Equipos de futbol" name="Equipos de futbol">
+					<datalist id="Equipos de futbol" name="Equipos de futbol">
+						<option value="FC Barcelona" name="Equipos de futbol">'Barça'</option>
+						<option value="Real Madrid CF" name="Equipos de futbol">'Madrid'</option>
+						<option value="Atlético de Madrid" name="Equipos de futbol">'Atleti'</option>
+						<option value="Valencia CF" name="Equipos de futbol">'Valencia'</option>
+						<option value="Villareal CF" name="Equipos de futbol">'Villareal'</option>
+						<option value="Málaga CF" name="Equipos de futbol">'Málaga'</option>
+						<option value="Rayo Vallecano de Madrid" name="Equipos de futbol">'Rayo'</option>
+						<option value="Real Sociedad de Fútbol" name="Equipos de futbol">'Real'</option>
+					</datalist>
+				</fieldset>
+					</div>
+					</div>
+				<div class="row">
+					<div class="col50">
+				<label>  Pregunta Filosófica "¿POR QUÉ?":</label><br>
+				<textarea type="text" spellcheck="true" name="preguta_filosófica"></textarea>
+					</div>
+					<div class="col50">
+				<button class="btn-warning">Guardar borrador</button> <button class="btn-danger" type="reset">Borrar formulario</button> <button class="btn-primary" type="submit">Enviar Formulario</button><br>
+					</div>
+				</div>
+			</form>
+		</main>	
+		<!-- Fin del formulario -->
+</body>
+</html>

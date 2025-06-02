@@ -1,0 +1,153 @@
+<!Doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="../media/logo.svg" />
+	<link href="../css/tienda.css" rel="stylesheet" type="text/css">
+	<title> Tienda </title>
+</head>
+<!-- Aqui acaba la cabecera y empieza el cuerpo del documento. -->
+<body>
+<header class="row green cabecera"><br><center><h1> Mi Tienda </h1> Lenguaje de Marcas, ASIR </center></header>
+	<aside>
+		<div class="content">
+		<center> <h1> Men&uacute; </h1> </center>
+		<hr />
+		<ul>
+			<li><a target= "central" href="saludos.html"> Saludos </a></li><br>
+			<li><a target= "central" href="caracteres.html"> Caracteres Especiales </a></li><br>
+			<li><a target= "central" href="meta.html"> Meta </a></li><br>
+			<li><a target= "_parent" href="../partials/noframes.html"> Noframes </a></li><br>
+			<li><a target= "_parent" href="calculadora.html"> Calculadora </a></li><br>
+			<li><a target= "_parent" href="tienda.html"> Tienda </a></li><br>
+		</ul>
+		</div>
+	</aside>
+
+<main>
+	<!-- Botón Modal -->
+	<div class="parte1">
+		<div class="wrap">
+		<center><button id="MyBtn" class="button">🛒Ver Carrito🛒</button></center>
+	<!-- Modal -->
+	<section id="modalTienda" class="modal">
+		<section class="modal-content">
+			<span class="close">&times;</span>
+			<p class="modal"> 🛒ARTICULOS DEL CARRITO🛒 
+			</p>
+		</section> 
+	</section>
+		</div>
+	</div>
+<div class="row">
+  <div class="col50">
+	
+	<div class="card">
+	 <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fa1c5d7b7d23434b9149ae0600fde3ed_9366/Chancla_Adilette_Naranja_GY3303_02_standard_hover.jpg" alt="chanclas">
+	  <h2>Addilette</h2>
+	  <p class="price">40€</p>
+	  <p class="description">Fresquita y suave.<br>No usar en invierno.<br>Naranja.</p>
+	  <button class="Carrito" data-product='{"nombre":"Addilette","precio":40}'>Añadir al carrito🛒</button>
+	</div>
+  </div>
+
+  <div class="col50">
+	<div class="card">
+	 <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/09c5ea6df1bd4be6baaaac5e003e7047_9366/Zapatilla_Forum_Low_Blanco_FY7756_01_standard.jpg" alt="Forumlow">
+	  <h2>Forum Low</h2>
+	  <p class="price">65€</p>
+	  <p class="description">Zapatillas clásicas.<br>Algo calurosas.<br>Azules y blancas.</p>
+	  <button class="Carrito" data-product='{"nombre":"Forum Low","precio":65}'>Añadir al carrito🛒</button>
+	</div>
+  </div>
+
+  <div class="col50">
+	<div class="card">
+	 <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c9fdf27c73cc481aa8efacb6002c81bc_9366/Zapatilla_Forum_Mid_Blanco_FY7939_01_standard.jpg" alt="Forummid">
+	  <h2>Forum Mid</h2>
+	  <p class="price">120€</p>
+	  <p class="description">Como las de la derecha pero altas.<br>Más calurosas aún.<br></p>
+	  <button class="Carrito" data-product='{"nombre":"Forum Mid","precio":120}'>Añadir al carrito🛒</button>
+	</div>
+ </div>
+
+  <div class="col50">
+	<div class="card">
+	 <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/5079816c4281406e937bac7c01370f8a_9366/Zapatilla_OZWEEGO_Blanco_FZ1825_01_standard.jpg" alt="Ozzweego">
+	  <h2>Ozzweego</h2>
+	  <p class="price">60€</p>
+	  <p class="description">Beige, blanco, negro y rojo.<br>Edición San Valentin.</p>
+	  <button class="Carrito" data-product='{"nombre":"Ozzweego","precio":60}'>Añadir al carrito🛒</button>
+	</div>
+  </div>
+
+ <div class="col50">
+	<div class="card">
+	 <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/9882f76dc5b14339a92bac5a0160ac4f_9366/Zapatilla_Samba_Vegan_Blanco_H01877_01_standard.jpg" alt="Samba">
+	  <h2>Samba</h2>
+	  <p class="price">100€</p>
+	  <p class="description">Puntera de ante.<br>Creadas para jugar Futbol Sala.</p>
+	  <button class="Carrito" data-product='{"nombre":"Samba","precio":100}'>Añadir al carrito🛒</button>
+	</div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col50">
+	
+	<div class="card">
+	 <img src="https://sothebys-md.brightspotcdn.com/dims4/default/7376ed1/2147483647/strip/true/crop/3543x3543+0+0/resize/800x800!/quality/90/?url=http%3A%2F%2Fsothebys-brightspot.s3.amazonaws.com%2Fmedia-desk%2Fe6%2F19%2F39eaf66d4471b4111641ede29c04%2F741sneakers-c726n-t3-02.jpg" alt="Jordan">
+	  <h2>Jordan</h2>
+	  <p class="price">8830€</p>
+	  <p class="description">Nike Jordan x Dior.<br>Colaboración exclusiva.<br>Solo reventa.</p>
+	  <button class="Carrito" data-product='{"nombre":"Jordan","precio":8830}'>Añadir al carrito🛒</button>
+	</div>
+  </div>
+
+  <div class="col50">
+	<div class="card">
+	 <img src="https://thegirlsfashion.com/wp-content/uploads/2022/07/nike-sb-dunk-low-ben-jerrys-chunky-dunky-ff-packagingha2n9.jpg" alt="ben&jerrys"><br>
+	  <h2>Dunk low</h2>
+	  <p class="price">1270€</p>
+	  <p class="description">"Chunky dunky".<br>Nike x Ben & jerrys.<br>Colaboración exclusiva.<br>Solo reventa.</p>
+	  <button class="Carrito" data-product='{"nombre":"Dunk Low","precio":1270}'>Añadir al carrito🛒</button>
+	</div>
+  </div>
+
+  <div class="col50">
+	<div class="card">
+	 <img src="https://images.stockx.com/images/Nike-Air-Force-1-Low-Skeleton-Halloween-2018-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1738193358" alt="Skeleton">
+	  <h2>Skeleton</h2>
+	  <p class="price">400€</p>
+	  <p class="description">Brillan en la oscuridad.<br>El precio varía con el color.</p>
+	  <button class="Carrito" data-product='{"nombre":"skeleton","precio":400}'>Añadir al carrito🛒</button>
+	</div>
+ </div>
+
+  <div class="col50">
+	<div class="card">
+	 <img src="https://phantom-expansion.unidadeditorial.es/befd3d7b14af5efd5bc0bfb51f57f4cc/crop/171x0/1862x1128/resize/1200/f/jpg/assets/multimedia/imagenes/2022/03/03/16462971187117.png" alt="MAG">
+	  <h2>MAG</h2>
+	  <p class="price">25770€</p>
+	  <p class="description">"Regreso al futuro".<br>Zapatillas más caras del mundo.<br>Exclusividad de 89 pares. Son automáticas.</p>
+	  <button class="Carrito" data-product='{"nombre":"MAG","precio":25770}'>Añadir al carrito🛒</button>
+	</div>
+  </div>
+
+ <div class="col50">
+	<div class="card">
+	 <img src="https://www.lavanguardia.com/files/content_image_mobile_filter/uploads/2021/03/31/6064333a4ecbc.jpeg" alt="Hell">
+	  <h2>Satán</h2>
+	  <p class="price">1018€</p>
+	  <p class="description">666 pares existetes.<br>Sangre humana en el interior.</p>
+	  <button class="Carrito" data-product='{"nombre":"Satán","precio":1018}'>Añadir al carrito🛒</button>
+	</div>
+  </div>
+</div>
+
+</main>	
+<script type="text/javascript" src="../js/tienda.js"></script>
+</body>
+</html>
