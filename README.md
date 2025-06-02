@@ -31,7 +31,7 @@ Este proyecto puede servir tanto como material de referencia como de práctica y
 
 ## 🚀 Visualización  
 Puedes ver el sitio directamente online mediante GitHub Pages:  
-🔗 [Proyecto ASIR](https://nerxtkd.github.io/html-ejercicios/)
+🔗 [Proyecto ASIR](https://nerxtkd.github.io/HTML-Exercises/)
 
 ## 📌 Notas:
 
