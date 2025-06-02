@@ -40,4 +40,5 @@ Todos los ejercicios fueron desarrollados durante el primer curso del **Grado Su
 
 
 ## 👩‍💻 Autora:
-Trabajo realizado por Nerea C. Puedes ver otros proyectos en mi perfil de GitHub: [@nerxtkd](https://github.com/nerxtkd)
+Trabajo realizado por Nerea C.  
+🔗 Puedes ver otros proyectos en mi perfil de GitHub: [@nerxtkd](https://github.com/nerxtkd)
